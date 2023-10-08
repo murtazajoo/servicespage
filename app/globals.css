@@ -21,3 +21,7 @@
   font-weight: light;
   font-style: normal;
 }
+
+.card-title {
+  @apply transform translate-y-[100px]  scale-0 group-hover:scale-100 opacity-0 group-hover:opacity-100  duration-500 origin-center    group-hover:translate-y-0;
+}

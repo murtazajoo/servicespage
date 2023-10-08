@@ -11,10 +11,8 @@ export default function Card({ data }) {
           color: data.text_color,
         }}
       >
-        <h2 className="transform translate-y-[100px]  scale-0 group-hover:scale-100  duration-500  origin-center    group-hover:translate-y-0 mb-2">
-          {data.title}
-        </h2>
-        <h3 className="transform translate-y-[100px]  scale-0 group-hover:scale-100   duration-500 origin-center    group-hover:translate-y-0 mb-8  text-2xl font-bold  tracking-wide group-hover:block ">
+        <h2 className="mb-2 card-title">{data.title}</h2>
+        <h3 className="mb-8 text-2xl font-bold tracking-wide card-title group-hover:block ">
           {data.subtitle}
         </h3>
         <Image

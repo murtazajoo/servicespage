@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <div className="grid grid-cols-3 gap-10 m-10">
+      <div className="grid gap-10 m-10 sm:grid-cols-2 md:grid-cols-3">
         {data.map((item, index) => (
           <Card key={index} data={item} />
         ))}
